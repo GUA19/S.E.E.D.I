@@ -3,8 +3,6 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 function handleClickEvent() {
-    // let routeData = router.resolve({ name: 'Dashboard' });
-    // window.open(routeData.href);
     router.push('./dashboard')
 }
 
@@ -23,7 +21,7 @@ function handleClickEvent() {
             Team 08
         </div>
         <div>
-            Kangyu Zhao, Joey Roemer, Jack Merker, Arandjel Dimitrijevic, Ankit Chaudhari
+            Ankit Chaudhari, Arandjel Dimitrijevic, Jack Merker, Joey Roemer, Kangyu Zhao
         </div>
         <br>
         <div>

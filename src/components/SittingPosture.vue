@@ -1,10 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onBeforeUnmount, onMounted, reactive } from 'vue'
 import { NCard, NGrid, NGi, NTooltip } from 'naive-ui';
+import WsClient from '../ws/PostureWebSocketClient';
+import authApi from '../api/auth';
 
 defineProps<{ msg: string }>()
 
-const count = ref(0)
+let webSocketClient: WsClient
+
+let webSocketData = reactive({
+    Posture: null as (null | string)
+})
+
+onMounted(async () => {
+    let wsToken = await authApi.getAuthToken()
+    webSocketClient = new WsClient(wsToken, webSocketData)
+})
+
+onBeforeUnmount(() => {
+    webSocketClient.close()
+})
 </script>
 
 <template>
