@@ -154,7 +154,7 @@ let validator = (x: number) => x > 0 && x <= 24
 <template>
   <n-space justify="center">
     <n-button text style="margin-right: 10px;text-decoration:underline">
-      <h1> <code > Query </code> </h1>
+      <h1> <code > query </code> </h1>
     </n-button>
     <h1> <code>{{ msg }} past</code> </h1>
     <h1>
