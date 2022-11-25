@@ -10,7 +10,7 @@ function handleClickEvent() {
 
 <template>
     <div>
-        <img @click="handleClickEvent()" src="../assets/seed.svg" class="logo1 vue" alt="SEED logo" />
+        <img @click="handleClickEvent()" src="../assets/seed.png" class="logo1 vue" alt="SEED logo" />
     </div>
     <code>
         <div>

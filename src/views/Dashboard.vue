@@ -7,11 +7,11 @@ import ForceSensorMatrix from '../components/ForceSensorMatrix.vue'
 </script>
 
 <template>
-    <n-grid responsive="screen" :x-gap="10" :y-gap="10" cols="2">
-        <n-gi span="1">
+    <n-grid responsive="screen" :x-gap="10" :y-gap="10" cols="24">
+        <n-gi span="17">
             <SittingPosture msg="current sitting posture" />
         </n-gi>
-        <n-gi span="1">
+        <n-gi span="7">
             <ForceSensorMatrix msg="real-time FSR matrix" />
         </n-gi>
     </n-grid>

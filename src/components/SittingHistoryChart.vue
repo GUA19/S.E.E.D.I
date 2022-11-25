@@ -17,7 +17,7 @@ let series = [
         strokeColor: '#00E396'
       },
       {
-        x: 'Leaning Back',
+        x: 'Leaning Backward',
         y: [
           new Date('2022-11-12T13:00:00').getTime() - new Date().getTimezoneOffset() * 60 * 1000,
           new Date('2022-11-12T15:00:00').getTime() - new Date().getTimezoneOffset() * 60 * 1000
@@ -44,7 +44,7 @@ let series = [
         strokeColor: '#775DD0'
       },
       {
-        x: 'Leaning Right / Left',
+        x: 'Leaning Sideways',
         y: [
           new Date('2022-11-12T12:00:00').getTime() - new Date().getTimezoneOffset() * 60 * 1000,
           new Date('2022-11-12T13:00:00').getTime() - new Date().getTimezoneOffset() * 60 * 1000
@@ -53,7 +53,7 @@ let series = [
         strokeColor: '#FEB019'
       },
       {
-        x: 'Leaning Right / Left',
+        x: 'Leaning Sideways',
         y: [
           new Date('2022-11-12T17:00:00').getTime() - new Date().getTimezoneOffset() * 60 * 1000,
           new Date('2022-11-12T18:00:00').getTime() - new Date().getTimezoneOffset() * 60 * 1000
@@ -158,7 +158,7 @@ let validator = (x: number) => x > 0 && x <= 24
     </n-button>
     <h1> <code>{{ msg }} past</code> </h1>
     <h1>
-      <n-input-number size="large" v-model:value="timeNumber" :validator="validator" style="width:77px; margin-top: -9px;" />
+      <n-input-number size="large" v-model:value="timeNumber" :validator="validator" style="width:80px; margin-top: -8px;" />
     </h1>
     <h1> <code>{{timeUnit}}(s)</code> </h1>
   </n-space>
