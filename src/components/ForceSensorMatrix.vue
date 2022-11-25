@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
             </n-space>
         </n-gi>
         <n-gi>
-            <n-card embedded :style="{ backgroundColor: getFunction(webSocketData.sensorsReading.fsr0), width: '150px', height:'150px'}">
+            <n-card embedded :style="{ backgroundColor: getFunction(webSocketData.sensorsReading.fsr1), width: '150px', height:'150px'}">
                 <code>
                     Sensor 1
                     <br>
@@ -88,7 +88,7 @@ onBeforeUnmount(() => {
         </n-gi>
         <n-gi>
             <n-space justify="end">
-                <n-card embedded :style="{ backgroundColor: getFunction(webSocketData.sensorsReading.fsr0), width: '150px', height:'150px'}">
+                <n-card embedded :style="{ backgroundColor: getFunction(webSocketData.sensorsReading.fsr2), width: '150px', height:'150px'}">
                     <code>
                         Sensor 2
                         <br>
@@ -100,7 +100,7 @@ onBeforeUnmount(() => {
             </n-space>
         </n-gi>
         <n-gi>
-            <n-card embedded :style="{ backgroundColor: getFunction(webSocketData.sensorsReading.fsr0), width: '150px', height:'150px'}">
+            <n-card embedded :style="{ backgroundColor: getFunction(webSocketData.sensorsReading.fsr3), width: '150px', height:'150px'}">
                 <code>
                     Sensor 3
                     <br>
