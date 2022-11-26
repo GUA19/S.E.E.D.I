@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { NButton, NGrid, NGi, NSpace, NInputNumber } from 'naive-ui';
+import reportApi from '../api/report';
 
 defineProps<{ msg: string }>()
 
@@ -149,11 +150,15 @@ let pieChartOptions = {
 let timeNumber = ref(24)
 let timeUnit = ref("hour")
 let validator = (x: number) => x > 0 && x <= 24
+
+function handleClickEvent() {
+  reportApi.getReport()
+}
 </script>
 
 <template>
   <n-space justify="center">
-    <n-button text style="margin-right: 10px;text-decoration:underline">
+    <n-button text @click="handleClickEvent()" style="margin-right: 10px;text-decoration:underline">
       <h1> <code > query </code> </h1>
     </n-button>
     <h1> <code>{{ msg }} past</code> </h1>

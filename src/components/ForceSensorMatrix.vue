@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, reactive } from 'vue'
-import { NCard, NGrid, NGi, NSpace, NTooltip } from 'naive-ui';
+import { NButton, NCard, NGrid, NGi, NSpace, NTooltip } from 'naive-ui';
 import WsClient from '../ws/SensorWebSocketClient';
 import authApi from '../api/auth';
+import sensorApi from '../api/sensor';
 
 defineProps<{ msg: string }>()
 
@@ -43,6 +44,10 @@ function getFunction(reading: number) {
     }
 }
 
+function handleClickEvent() {
+    sensorApi.postCalibrate()
+}
+
 onMounted(async () => {
     let wsToken = await authApi.getAuthToken()
     webSocketClient = new WsClient(wsToken, webSocketData)
@@ -55,9 +60,20 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <h1>
-        <code>{{ msg }}</code>
-    </h1>
+    <n-space justify="center">
+        <n-button text @click="handleClickEvent()" style="margin-right: 10px;text-decoration:underline">
+            <h1>
+                <code>
+                    calibrate
+                </code>
+            </h1>
+        </n-button>
+        <h1>
+            <code>
+                {{ msg }}
+            </code>
+        </h1>
+    </n-space>
     <code>
         front
     </code>

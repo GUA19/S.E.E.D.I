@@ -12,7 +12,7 @@ import ForceSensorMatrix from '../components/ForceSensorMatrix.vue'
             <SittingPosture msg="current sitting posture" />
         </n-gi>
         <n-gi span="7">
-            <ForceSensorMatrix msg="real-time FSR matrix" />
+            <ForceSensorMatrix msg="FSR matrix" />
         </n-gi>
     </n-grid>
     <SittingHistoryChart msg="sitting analysis for" />
