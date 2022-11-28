@@ -37,7 +37,7 @@ function getFunction(reading: number) {
         return '#42b88351'
     } else if(reading > 100) {
         return '#42b88338'
-    } else if (reading > 0) {
+    } else if (reading > 50) {
         return '#42b8831f'
     } else {
         return '#42b88300'
@@ -85,7 +85,7 @@ onBeforeUnmount(() => {
                         Sensor 0
                         <br>
                         <h2>
-                            {{ webSocketData.sensorsReading.fsr0 }}
+                            {{ webSocketData.sensorsReading.fsr0 < 0 ? 0 : webSocketData.sensorsReading.fsr0 }}
                         </h2>
                     </code>
                 </n-card>
@@ -97,7 +97,7 @@ onBeforeUnmount(() => {
                     Sensor 1
                     <br>
                     <h2>
-                        {{ webSocketData.sensorsReading.fsr1 }}
+                        {{ webSocketData.sensorsReading.fsr1 < 0 ? 0 : webSocketData.sensorsReading.fsr1 }}
                     </h2>
                 </code>
             </n-card>
@@ -109,7 +109,7 @@ onBeforeUnmount(() => {
                         Sensor 2
                         <br>
                         <h2>
-                            {{ webSocketData.sensorsReading.fsr2 }}
+                            {{ webSocketData.sensorsReading.fsr2 < 0 ? 0 : webSocketData.sensorsReading.fsr2 }}
                         </h2>
                     </code>
                 </n-card>
@@ -121,7 +121,7 @@ onBeforeUnmount(() => {
                     Sensor 3
                     <br>
                     <h2>
-                        {{ webSocketData.sensorsReading.fsr3 }}
+                        {{ webSocketData.sensorsReading.fsr3 < 0 ? 0 : webSocketData.sensorsReading.fsr3 }}
                     </h2>
                 </code>
             </n-card>

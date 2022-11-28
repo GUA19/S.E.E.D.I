@@ -51,7 +51,7 @@ function getSuggestion(posture: string | null) {
         case 'leaning_sideways':
             return "Looks like you are leaning sideways."
         case 'one_leg_over_the_other':
-            return "Looks like you are crossing one leg over the other. You may look like a boss, but your spine is suffering."
+            return "Looks like you are crossing one leg over the other."
         case 'sitting_at_the_front_edge':
             return "Looks like you are sitting at the front edge of the chair."
         default:
