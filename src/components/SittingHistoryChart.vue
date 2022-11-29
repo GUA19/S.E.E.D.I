@@ -120,14 +120,14 @@ let chartOptions = {
   }
 }
 
-let pieSeries = [44, 55, 13, 43, 12, 10]
+let pieSeries = [2.25, 2, 3.75, 2, 2, 2]
 let pieChartOptions = {
   chart: {
     type: 'pie',
     background: 'transparent',
   },
   colors: ['#00E396', '#008FFB', '#775DD0', '#FEB019', '#FF4560', '#3F51B5'],
-  labels: ['Upright', 'Leaning Back', 'Leaning Forward', 'Leaning Right / Left', 'One Leg Over the Other', 'Sitting at the Front Edge'],
+  labels: ['Upright', 'Leaning Backward', 'Leaning Forward', 'Leaning Sideways', 'One Leg Over the Other', 'Sitting at the Front Edge'],
   stroke: {
     show: true,
     width: 1,
