@@ -23,7 +23,7 @@ function handleClickEvent() {
         <pre>Ankit Chaudhari          20apc7</pre>
         <pre>Arandjel Dimitrijevic    21ad24</pre>
         <pre>Jack Merker             21jbm11</pre>
-        <pre>Joey Roemer               21jgr</pre>
+        <pre>Joey Roemer              21jgr6</pre>
         <pre>Kangyu Zhao               18kz2</pre>
         <br>
         <div>
